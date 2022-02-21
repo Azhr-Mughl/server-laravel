@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/hao-email/{template?}/{email?}', ['as' => 'hao-email', 'uses' => 'mailingController@haoEmail']);
+
 Route::get('/', function () {
     return view('welcome');
 });
