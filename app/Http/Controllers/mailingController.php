@@ -17,14 +17,28 @@ class mailingController extends Controller
     {
 
         echo '<pre style="text-align:center; margin-top: 100px;">';
-        echo 'Sending ['. $template. '] email to "'. $email . '"';
+        echo '[' . $template . '] email sent to "' . $email . '"';
         echo '</pre>';
 
-        $to = $email ? $email : 'mister_azhar@yahoo.com';
         $mailData = [];
         $mailData['template'] = $template;
 
-        Mail::to($to)->send(new HaoSaudiMail($mailData));
+        $to = $email ? $email : 'mister_azhar@yahoo.com';
+        $subject = 'HaoSaudi | ' . $template;
+        $markdown = 'Email.' . $template;
+        // Mail::to($to)->send(new HaoSaudiMail($mailData));
+
+        // $arrayEmails = ['someone@mail.com', 'stranger@mail.com'];
+        // $emailSubject = 'My Subject';
+        // $emailBody = 'Hello, this is my message content.';
+
+        Mail::send(
+            $markdown,
+            ['data' => $mailData],
+            function ($message) use ($to, $subject) {
+                $message->to($to)->subject($subject);
+            }
+        );
 
         // echo '<div style="text-align:center; margin-top: 30px; color:green">Email Sent Successfully...!</div>';
     }

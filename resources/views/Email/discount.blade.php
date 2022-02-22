@@ -6,9 +6,9 @@
     <title>HaoSaudi</title>
     <style type="text/css">
 
-        body {
+        .wrapper {
             margin: 0;
-            padding: 0;
+            padding: 20px 0;
             min-width: 100% !important;
             color: #263238 !important;
             background: #EAEAEA !important;
@@ -20,8 +20,6 @@
             max-width: 700px;
             background: #fff;
             margin: auto !important;
-            margin-top: 20px !important;
-            margin-bottom: 20px !important;
             font-size: 14px !important;
         }
 
@@ -202,6 +200,7 @@
             width: 25px;
             vertical-align: middle;
         }
+
         @media only screen and (max-width: 550px),
         screen and (max-device-width: 550px) {
             .hao-header {
@@ -218,131 +217,135 @@
                 width: 100% !important;
                 margin-bottom: 15px !important
             }
+            .coupon {
+                padding: 20px 75px !important;
+            }
         }
     </style>
 </head>
 
 <body>
-    <table class="content" cellpadding="0" cellspacing="0" border="0">
-        <tr >
-            <td>
-                <div class="hao-header">
-                    <div class="hao-icon">
-                        <img class="logo" src="{{asset('email_assets/hao-logo.png')}}">
-                    </div>
-
-                    <div class="header-title">
-                        IT'S BIG DEAL!
-                    </div>
-
-                    <div class="header-desc">
-                        Don't let this deals run away
-                    </div>
-                </div>
-            </td>
-        </tr>
-
-
-        <tr >
-            <td>
-                <div class="content-body">
-                    <div class="greetings">
-                        Hi John Doe,
-                    </div>
-
-                    <div class="message">
-                        Congratulation, you Get 20$ Discount on your next booking :).
-                    </div>
-
-                    <div class="discount-content">
-                        <div class="discount">GET 20% OFF</div>
-                        <div class="message center">
-                            Here is your coupon code - But Hurry Ends 8/25
-                        </div>
-
-                        <div class="coupon">
-                            HAO20
-                        </div>
-
-                        <a href="https://www.azharmughal.com/" class="mb-10">
-                            <button class="hao-btn">
-                                Visit Website
-                            </button>
-                        </a>
-                        {{-- <div class="visit-website mt-15">
-                        </div> --}}
-                    </div>
-                </div>
-            </td>
-        </tr>
-
-
-        <tr >
-            <td>
-                <div class="mb-10 center">
-                    Sent With
-                    <img class="love" src="{{asset('email_assets/heart.png')}}">
-                     From Hao
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <div class="hao-footer">
-                    <div class="footer-content">
-                        <div class="social-links mt-10">
-                            <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
-                                <img class="social-img" src="{{asset('email_assets/social-twitter.png')}}">
-                            </a>
-                            <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
-                                <img class="social-img" src="{{asset('email_assets/social-insta.png')}}">
-                            </a>
-                            <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
-                                <img class="social-img" src="{{asset('email_assets/social-whatsapp.png')}}">
-                            </a>
-                        </div>
-
+    <div class="wrapper">
+        <table class="content" cellpadding="0" cellspacing="0" border="0">
+            <tr >
+                <td>
+                    <div class="hao-header">
                         <div class="hao-icon">
-                            <img class="logo" src="{{asset('email_assets/hao-logo.png')}}">
+                            <img class="logo" src="{{$message->embed(public_path('email_assets/hao-logo.png'))}}" />
                         </div>
 
-                        <div class="download-title mt-15">
-                            Download The App Now
+                        <div class="header-title">
+                            IT'S BIG DEAL!
                         </div>
 
-                        <div class="download-buttons mt-15">
-                            <a href="https://www.azharmughal.com/" class="download-link mr-10 mb-10">
-                                <img class="download-img" src="{{asset('email_assets/download-apple.png')}}">
-                            </a>
-                            <a href="https://www.azharmughal.com/" class="download-link mr-10 mb-10">
-                                <img class="download-img" src="{{asset('email_assets/download-android.png')}}">
-                            </a>
-                        </div>
-
-                        <div class="unsubscribe mt-15">
-                            If you want to permanently remove your email address from our mailing list please use this link to
-                            <a class="unsubscribe-btn">Unsubscribe</a>
+                        <div class="header-desc">
+                            Don't let this deals run away
                         </div>
                     </div>
+                </td>
+            </tr>
 
-                    <div class="footer-bottom">
-                        <div class="pages-link">
-                            <a href="https://www.azharmughal.com/" class="page-link mr-10">
-                                Email Preferences
+
+            <tr >
+                <td>
+                    <div class="content-body">
+                        <div class="greetings">
+                            Hi John Doe,
+                        </div>
+
+                        <div class="message">
+                            Congratulation, you Get 20$ Discount on your next booking :).
+                        </div>
+
+                        <div class="discount-content">
+                            <div class="discount">GET 20% OFF</div>
+                            <div class="message center">
+                                Here is your coupon code - But Hurry Ends 8/25
+                            </div>
+
+                            <div class="coupon">
+                                HAO20
+                            </div>
+
+                            <a href="https://www.azharmughal.com/" class="mb-10">
+                                <button class="hao-btn">
+                                    Visit Website
+                                </button>
                             </a>
-                            <a href="https://www.azharmughal.com/" class="page-link mr-10">
-                                Contact Us
-                            </a>
-                            <a href="https://www.azharmughal.com/" class="page-link mr-10">
-                                Privacy
-                            </a>
+                            {{-- <div class="visit-website mt-15">
+                            </div> --}}
                         </div>
                     </div>
-                </div>
-            </td>
-        </tr>
+                </td>
+            </tr>
 
-    </table>
 
+            <tr >
+                <td>
+                    <div class="mb-10 center">
+                        Sent With
+                        <img class="love" src="{{$message->embed(public_path('email_assets/heart.png'))}}" />
+                         From Hao
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="hao-footer">
+                        <div class="footer-content">
+                            <div class="social-links mt-10">
+                                <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
+                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-twitter.png'))}}" />
+                                </a>
+                                <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
+                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-insta.png'))}}" />
+                                </a>
+                                <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
+                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-whatsapp.png'))}}" />
+                                </a>
+                            </div>
+
+                            <div class="hao-icon">
+                                <img class="logo" src="{{$message->embed(public_path('email_assets/hao-logo.png'))}}" />
+                            </div>
+
+                            <div class="download-title mt-15">
+                                Download The App Now
+                            </div>
+
+                            <div class="download-buttons mt-15">
+                                <a href="https://www.azharmughal.com/" class="download-link mr-10 mb-10">
+                                    <img class="download-img" src="{{$message->embed(public_path('email_assets/download-apple.png'))}}" />
+                                </a>
+                                <a href="https://www.azharmughal.com/" class="download-link mr-10 mb-10">
+                                    <img class="download-img" src="{{$message->embed(public_path('email_assets/download-android.png'))}}" />
+                                </a>
+                            </div>
+
+                            <div class="unsubscribe mt-15">
+                                If you want to permanently remove your email address from our mailing list please use this link to
+                                <a class="unsubscribe-btn">Unsubscribe</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-bottom">
+                            <div class="pages-link">
+                                <a href="https://www.azharmughal.com/" class="page-link mr-10">
+                                    Email Preferences
+                                </a>
+                                <a href="https://www.azharmughal.com/" class="page-link mr-10">
+                                    Contact Us
+                                </a>
+                                <a href="https://www.azharmughal.com/" class="page-link mr-10">
+                                    Privacy
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
 </body>

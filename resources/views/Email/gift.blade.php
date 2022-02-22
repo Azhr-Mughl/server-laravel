@@ -6,9 +6,9 @@
     <title>HaoSaudi</title>
     <style type="text/css">
 
-        body {
+        .wrapper {
             margin: 0;
-            padding: 0;
+            padding: 20px 0;
             min-width: 100% !important;
             color: #263238 !important;
             background: #EAEAEA !important;
@@ -20,8 +20,6 @@
             max-width: 700px;
             background: #fff;
             margin: auto !important;
-            margin-top: 20px !important;
-            margin-bottom: 20px !important;
             font-size: 14px !important;
         }
 
@@ -171,8 +169,9 @@
 
 
         .gift-box {
-            width: 100px;
-            margin-bottom: -2px;
+            width: 100px !important;
+            vertical-align: bottom !important;
+            margin-bottom: -2px !important;
         }
 
         .gift-header {
@@ -224,126 +223,127 @@
 </head>
 
 <body>
-    <table class="content" cellpadding="0" cellspacing="0" border="0">
-        <tr >
-            <td>
-                <div class="hao-header gift-header">
-                    <div class="hao-icon center m-auto">
-                        <img class="logo" src="{{asset('email_assets/hao-logo.png')}}">
+    <div class="wrapper">
+        <table class="content" cellpadding="0" cellspacing="0" border="0">
+            <tr >
+                <td>
+                    <div class="hao-header gift-header">
+                        <div class="hao-icon center m-auto">
+                            <img class="logo" src="{{$message->embed(public_path('email_assets/hao-logo.png'))}}" />
+                        </div>
+
+                        <div class="mt-25 center m-auto">
+                            <img class="gift-box" src="{{$message->embed(public_path('email_assets/gift-box.png'))}}" />
+                        </div>
+
                     </div>
-
-                    <div class="mt-25 center m-auto">
-                        <img class="gift-box" src="{{asset('email_assets/gift-box.png')}}">
-                    </div>
-
-                </div>
-            </td>
-        </tr>
+                </td>
+            </tr>
 
 
-        <tr >
-            <td>
-                <div class="content-body">
-                    <div class="greetings">
-                        Azhar Mughal,
-                    </div>
-
-                    <div class="message">
-                        Your gift request is received and we are delivering this to the receiver
-                    </div>
-
-                    <div class="gift-content center">
-                        <div class="transaction mt-25 mb-10">
-                            <div>Transaction Details</div>
-                            <div>Order Number: <span class="primary-color bold">#1234</span></div>
-                            <div>Paid amount: <span class="bold">400 SR</span></div>
+            <tr >
+                <td>
+                    <div class="content-body">
+                        <div class="greetings">
+                            Azhar Mughal,
                         </div>
 
-                        <div class="sender-message mt-25 mb-10">
-                            Dear my friend, I send you this gift card so you can enjoy your free time after you graduate :)
+                        <div class="message">
+                            Your gift request is received and we are delivering this to the receiver
                         </div>
 
-                        <div class="receiver-item mt-25 mb-10">
-                            <div>Receiver Name</div>
-                            <div class="bold">Sami John</div>
-                        </div>
+                        <div class="gift-content center">
+                            <div class="transaction mt-25 mb-10">
+                                <div>Transaction Details</div>
+                                <div>Order Number: <span class="primary-color bold">#1234</span></div>
+                                <div>Paid amount: <span class="bold">400 SR</span></div>
+                            </div>
 
-                        <div class="receiver-item mt-15 mb-10">
-                            <div>Receiver Mobile</div>
-                            <div class="bold">050044004</div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
+                            <div class="sender-message mt-25 mb-10">
+                                Dear my friend, I send you this gift card so you can enjoy your free time after you graduate :)
+                            </div>
 
+                            <div class="receiver-item mt-25 mb-10">
+                                <div>Receiver Name</div>
+                                <div class="bold">Sami John</div>
+                            </div>
 
-        <tr >
-            <td>
-                <div class="mb-10 center">
-                    Sent With
-                    <img class="love" src="{{asset('email_assets/heart.png')}}">
-                     From Hao
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <div class="hao-footer">
-                    <div class="footer-content">
-                        <div class="social-links mt-10">
-                            <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
-                                <img class="social-img" src="{{asset('email_assets/social-twitter.png')}}">
-                            </a>
-                            <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
-                                <img class="social-img" src="{{asset('email_assets/social-insta.png')}}">
-                            </a>
-                            <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
-                                <img class="social-img" src="{{asset('email_assets/social-whatsapp.png')}}">
-                            </a>
-                        </div>
-
-                        <div class="hao-icon">
-                            <img class="logo" src="{{asset('email_assets/hao-logo.png')}}">
-                        </div>
-
-                        <div class="download-title mt-15">
-                            Download The App Now
-                        </div>
-
-                        <div class="download-buttons mt-15">
-                            <a href="https://www.azharmughal.com/" class="download-link mr-10 mb-10">
-                                <img class="download-img" src="{{asset('email_assets/download-apple.png')}}">
-                            </a>
-                            <a href="https://www.azharmughal.com/" class="download-link mr-10 mb-10">
-                                <img class="download-img" src="{{asset('email_assets/download-android.png')}}">
-                            </a>
-                        </div>
-
-                        <div class="unsubscribe mt-15">
-                            If you want to permanently remove your email address from our mailing list please use this link to
-                            <a class="unsubscribe-btn">Unsubscribe</a>
+                            <div class="receiver-item mt-15 mb-10">
+                                <div>Receiver Mobile</div>
+                                <div class="bold">050044004</div>
+                            </div>
                         </div>
                     </div>
+                </td>
+            </tr>
 
-                    <div class="footer-bottom">
-                        <div class="pages-link">
-                            <a href="https://www.azharmughal.com/" class="page-link mr-10">
-                                Email Preferences
-                            </a>
-                            <a href="https://www.azharmughal.com/" class="page-link mr-10">
-                                Contact Us
-                            </a>
-                            <a href="https://www.azharmughal.com/" class="page-link mr-10">
-                                Privacy
-                            </a>
+
+            <tr >
+                <td>
+                    <div class="mb-10 center">
+                        Sent With
+                        <img class="love" src="{{$message->embed(public_path('email_assets/heart.png'))}}" />
+                         From Hao
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="hao-footer">
+                        <div class="footer-content">
+                            <div class="social-links mt-10">
+                                <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
+                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-twitter.png'))}}" />
+                                </a>
+                                <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
+                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-insta.png'))}}" />
+                                </a>
+                                <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
+                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-whatsapp.png'))}}" />
+                                </a>
+                            </div>
+
+                            <div class="hao-icon">
+                                <img class="logo" src="{{$message->embed(public_path('email_assets/hao-logo.png'))}}" />
+                            </div>
+
+                            <div class="download-title mt-15">
+                                Download The App Now
+                            </div>
+
+                            <div class="download-buttons mt-15">
+                                <a href="https://www.azharmughal.com/" class="download-link mr-10 mb-10">
+                                    <img class="download-img" src="{{$message->embed(public_path('email_assets/download-apple.png'))}}" />
+                                </a>
+                                <a href="https://www.azharmughal.com/" class="download-link mr-10 mb-10">
+                                    <img class="download-img" src="{{$message->embed(public_path('email_assets/download-android.png'))}}" />
+                                </a>
+                            </div>
+
+                            <div class="unsubscribe mt-15">
+                                If you want to permanently remove your email address from our mailing list please use this link to
+                                <a class="unsubscribe-btn">Unsubscribe</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-bottom">
+                            <div class="pages-link">
+                                <a href="https://www.azharmughal.com/" class="page-link mr-10">
+                                    Email Preferences
+                                </a>
+                                <a href="https://www.azharmughal.com/" class="page-link mr-10">
+                                    Contact Us
+                                </a>
+                                <a href="https://www.azharmughal.com/" class="page-link mr-10">
+                                    Privacy
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </td>
-        </tr>
+                </td>
+            </tr>
 
-    </table>
-
+        </table>
+    </div>
 </body>
