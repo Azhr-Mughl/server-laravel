@@ -25,8 +25,20 @@
             font-size: 14px !important;
         }
 
+        .primary-color {
+            color: #D76878 !important;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
         .mt-15 {
             margin-top: 15px !important;
+        }
+
+        .mt-25 {
+            margin-top: 25px !important;
         }
 
         .mr-10 {
@@ -53,6 +65,10 @@
             text-align: center;
         }
 
+        .m-auto {
+            margin: auto;
+        }
+
         /* ------HEADER------ */
         .hao-header {
             padding: 40px;
@@ -71,7 +87,7 @@
         }
 
         .header-title {
-            color: #D76A7A;
+            color: #D76878;
             font-size: 28px !important;
             margin-top: 20px;
         }
@@ -123,14 +139,14 @@
         }
 
         .unsubscribe-btn {
-            color: #D76A7A !important;
+            color: #D76878 !important;
             cursor: pointer;
         }
 
         .footer-bottom {
             text-align: center;
             padding: 20px 40px;
-            background: #D76A7A !important;
+            background: #D76878 !important;
         }
 
         .page-link {
@@ -153,28 +169,29 @@
             margin-top: 10px;
         }
 
-        .discount-content {
-            text-align: center
+
+        .gift-box {
+            width: 100px;
+            margin-bottom: -2px;
         }
-        .discount {
-            font-size: 28px !important;
-            margin-top: 30px;
+
+        .gift-header {
+            padding-bottom: 0px !important;
+            border-bottom: 3px solid #D76878;
         }
-        .coupon {
-            padding: 20px 125px;
-            color: #D76A7A;
-            border: 1px solid #D2D2D2;
-            width: fit-content;
-            margin: 20px auto;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 40px;
+
+        .gift-content {
+
+        }
+
+        .transaction {
+
         }
 
         .hao-btn {
             color: #fff !important;
             text-decoration: none !important;
-            background: #D76A7A;
+            background: #D76878;
             padding: 15px 30px;
             border-radius: 50px;
             border: none;
@@ -210,18 +227,15 @@
     <table class="content" cellpadding="0" cellspacing="0" border="0">
         <tr >
             <td>
-                <div class="hao-header">
-                    <div class="hao-icon">
+                <div class="hao-header gift-header">
+                    <div class="hao-icon center m-auto">
                         <img class="logo" src="{{asset('email_assets/hao-logo.png')}}">
                     </div>
 
-                    <div class="header-title">
-                        IT'S BIG DEAL!
+                    <div class="mt-25 center m-auto">
+                        <img class="gift-box" src="{{asset('email_assets/gift-box.png')}}">
                     </div>
 
-                    <div class="header-desc">
-                        Don't let this deals run away
-                    </div>
                 </div>
             </td>
         </tr>
@@ -231,30 +245,33 @@
             <td>
                 <div class="content-body">
                     <div class="greetings">
-                        Hi John Doe,
+                        Azhar Mughal,
                     </div>
 
                     <div class="message">
-                        Congratulation, you Get 20$ Discount on your next booking :).
+                        Your gift request is received and we are delivering this to the receiver
                     </div>
 
-                    <div class="discount-content">
-                        <div class="discount">GET 20% OFF</div>
-                        <div class="message center">
-                            Here is your coupon code - But Hurry Ends 8/25
+                    <div class="gift-content center">
+                        <div class="transaction mt-25 mb-10">
+                            <div>Transaction Details</div>
+                            <div>Order Number: <span class="primary-color bold">#1234</span></div>
+                            <div>Paid amount: <span class="bold">400 SR</span></div>
                         </div>
 
-                        <div class="coupon">
-                            HAO20
+                        <div class="sender-message mt-25 mb-10">
+                            Dear my friend, I send you this gift card so you can enjoy your free time after you graduate :)
                         </div>
 
-                        <a href="https://www.azharmughal.com/" class="mb-10">
-                            <button class="hao-btn">
-                                Visit Website
-                            </button>
-                        </a>
-                        {{-- <div class="visit-website mt-15">
-                        </div> --}}
+                        <div class="receiver-item mt-25 mb-10">
+                            <div>Receiver Name</div>
+                            <div class="bold">Sami John</div>
+                        </div>
+
+                        <div class="receiver-item mt-15 mb-10">
+                            <div>Receiver Mobile</div>
+                            <div class="bold">050044004</div>
+                        </div>
                     </div>
                 </div>
             </td>

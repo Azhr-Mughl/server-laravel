@@ -25,8 +25,20 @@
             font-size: 14px !important;
         }
 
+        .primary-color {
+            color: #D76878 !important;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
         .mt-15 {
             margin-top: 15px !important;
+        }
+
+        .mt-25 {
+            margin-top: 25px !important;
         }
 
         .mr-10 {
@@ -49,6 +61,13 @@
             margin-top: -35px !important;
         }
 
+        .center {
+            text-align: center;
+        }
+
+        .m-auto {
+            margin: auto;
+        }
 
         /* ------HEADER------ */
         .hao-header {
@@ -68,7 +87,7 @@
         }
 
         .header-title {
-            color: #D76A7A;
+            color: #D76878;
             font-size: 28px !important;
             margin-top: 20px;
         }
@@ -120,14 +139,14 @@
         }
 
         .unsubscribe-btn {
-            color: #D76A7A !important;
+            color: #D76878 !important;
             cursor: pointer;
         }
 
         .footer-bottom {
             text-align: center;
             padding: 20px 40px;
-            background: #D76A7A !important;
+            background: #D76878 !important;
         }
 
         .page-link {
@@ -150,6 +169,31 @@
             margin-top: 10px;
         }
 
+        .simple-header {
+            border-bottom: 1px solid #D2D2D2;
+            background: #fff !important;
+        }
+
+        .welcome-content {
+            max-width: 500px;
+            padding: 30px;
+        }
+
+        .hao-btn {
+            color: #fff !important;
+            text-decoration: none !important;
+            background: #D76878;
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            /* height: 50px; */
+        }
+
+        .love {
+            width: 25px;
+            vertical-align: middle;
+        }
         @media only screen and (max-width: 550px),
         screen and (max-device-width: 550px) {
             .hao-header {
@@ -174,18 +218,14 @@
     <table class="content" cellpadding="0" cellspacing="0" border="0">
         <tr >
             <td>
-                <div class="hao-header">
-                    <div class="hao-icon">
+                <div class="hao-header simple-header">
+                    <div class="hao-icon center m-auto">
                         <img class="logo" src="{{asset('email_assets/hao-logo.png')}}">
                     </div>
 
-                    <div class="header-title">
-                        IT'S BIG DEAL!
-                    </div>
-
-                    <div class="header-desc">
-                        Don't let this deals run away
-                    </div>
+                    {{-- <div class="mt-25 center m-auto">
+                        <img class="gift-box" src="{{asset('email_assets/gift-box.png')}}">
+                    </div> --}}
                 </div>
             </td>
         </tr>
@@ -195,17 +235,33 @@
             <td>
                 <div class="content-body">
                     <div class="greetings">
-                        Hi John Doe,
+                        Azhar Mughal,
                     </div>
 
-                    <div class="message">
-                        Congratulation, you Get 20$ Discount on your next booking :).
+                    <div class="message primary-color bold">
+                        Welcome
+                    </div>
+
+                    <div class="welcome-content center m-auto">
+                        Thank you for registering with us and wish the Hao to be station for your happiness and exploring the live
+                        <br>
+                        <br>
+                        Wishing you life full of beautiful experience with Hao.
                     </div>
                 </div>
             </td>
         </tr>
 
 
+        <tr >
+            <td>
+                <div class="mb-10 center">
+                    Sent With
+                    <img class="love" src="{{asset('email_assets/heart.png')}}">
+                     From Hao
+                </div>
+            </td>
+        </tr>
 
         <tr>
             <td>

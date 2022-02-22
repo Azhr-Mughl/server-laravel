@@ -25,8 +25,20 @@
             font-size: 14px !important;
         }
 
+        .primary-color {
+            color: #D76878 !important;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
         .mt-15 {
             margin-top: 15px !important;
+        }
+
+        .mt-25 {
+            margin-top: 25px !important;
         }
 
         .mr-10 {
@@ -49,6 +61,13 @@
             margin-top: -35px !important;
         }
 
+        .center {
+            text-align: center;
+        }
+
+        .m-auto {
+            margin: auto;
+        }
 
         /* ------HEADER------ */
         .hao-header {
@@ -68,7 +87,7 @@
         }
 
         .header-title {
-            color: #D76A7A;
+            color: #D76878;
             font-size: 28px !important;
             margin-top: 20px;
         }
@@ -120,14 +139,14 @@
         }
 
         .unsubscribe-btn {
-            color: #D76A7A !important;
+            color: #D76878 !important;
             cursor: pointer;
         }
 
         .footer-bottom {
             text-align: center;
             padding: 20px 40px;
-            background: #D76A7A !important;
+            background: #D76878 !important;
         }
 
         .page-link {
@@ -150,6 +169,39 @@
             margin-top: 10px;
         }
 
+        .discount-content {
+            text-align: center
+        }
+        .discount {
+            font-size: 28px !important;
+            margin-top: 30px;
+        }
+        .coupon {
+            padding: 20px 125px;
+            color: #D76878;
+            border: 1px solid #D2D2D2;
+            width: fit-content;
+            margin: 20px auto;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .hao-btn {
+            color: #fff !important;
+            text-decoration: none !important;
+            background: #D76878;
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            /* height: 50px; */
+        }
+
+        .love {
+            width: 25px;
+            vertical-align: middle;
+        }
         @media only screen and (max-width: 550px),
         screen and (max-device-width: 550px) {
             .hao-header {
@@ -201,11 +253,39 @@
                     <div class="message">
                         Congratulation, you Get 20$ Discount on your next booking :).
                     </div>
+
+                    <div class="discount-content">
+                        <div class="discount">GET 20% OFF</div>
+                        <div class="message center">
+                            Here is your coupon code - But Hurry Ends 8/25
+                        </div>
+
+                        <div class="coupon">
+                            HAO20
+                        </div>
+
+                        <a href="https://www.azharmughal.com/" class="mb-10">
+                            <button class="hao-btn">
+                                Visit Website
+                            </button>
+                        </a>
+                        {{-- <div class="visit-website mt-15">
+                        </div> --}}
+                    </div>
                 </div>
             </td>
         </tr>
 
 
+        <tr >
+            <td>
+                <div class="mb-10 center">
+                    Sent With
+                    <img class="love" src="{{asset('email_assets/heart.png')}}">
+                     From Hao
+                </div>
+            </td>
+        </tr>
 
         <tr>
             <td>

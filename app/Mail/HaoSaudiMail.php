@@ -28,10 +28,11 @@ class HaoSaudiMail extends Mailable
      */
     public function build()
     {
-        $subject = 'HaoSaudi';
+        $subject = 'HaoSaudi | ' . $this->mailData['template'];
+        $markdown = 'Email.' . $this->mailData['template'];
         return $this->from('contact@azharmughal.com', 'azharmughal.com')
             ->subject($subject)
-            ->markdown('Email.booking')
+            ->markdown($markdown)
             ->with(
                 [
                     'data' => $this->mailData

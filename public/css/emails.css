@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100% !important;
+    color: #263238 !important;
+    background: #EAEAEA !important;
+    /* font-family: Ubuntu, Helvetica, Arial, sans-serif !important; */
+}
+
+.content {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    margin: auto !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    font-size: 14px !important;
+}
+
+.primary-color {
+    color: #D76878 !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.mt-25 {
+    margin-top: 25px !important;
+}
+
+.mr-10 {
+    margin-right: 10px !important;
+}
+
+.ml-10 {
+    margin-left: 10px !important;
+}
+
+.mr-15 {
+    margin-right: 10px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mt-negative {
+    margin-top: -35px !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+/* ------HEADER------ */
+.hao-header {
+    padding: 40px;
+    background: #CADDD9 !important;
+    text-align: left !important;
+}
+
+.hao-icon {
+    width: fit-content;
+    /* text-align: left; */
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+}
+
+.header-title {
+    color: #D76878;
+    font-size: 28px !important;
+    margin-top: 20px;
+}
+
+.header-desc {
+    font-size: 24px !important;
+}
+
+/* ------FOOTER------ */
+.hao-footer {
+    width: 100% !important;
+    background: #CADDD9 !important;
+    text-align: left !important;
+}
+
+.footer-content {
+    padding: 40px;
+}
+
+.social-links {
+    float: right;
+    text-align: right;
+}
+
+.social-link {
+    color: transparent !important;
+    text-decoration: none !important;
+}
+
+.social-img {
+    width: 30px;
+}
+
+.download-title {
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+.download-link {
+    color: transparent !important;
+    text-decoration: none !important;
+}
+
+.download-img {
+    width: 125px !important;
+}
+
+.unsubscribe {
+}
+
+.unsubscribe-btn {
+    color: #D76878 !important;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 40px;
+    background: #D76878 !important;
+}
+
+.page-link {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+
+/* ------CONTENT-BODY------ */
+.content-body {
+    padding: 40px;
+    background: #ffffff !important;
+    text-align: center !important;
+}
+.greetings {
+    font-weight: bold;
+}
+
+.message {
+    margin-top: 10px;
+}
+
+
+.gift-box {
+    width: 100px;
+    margin-bottom: -2px;
+}
+
+.gift-header {
+    padding-bottom: 0px !important;
+    border-bottom: 3px solid #D76878;
+}
+
+.gift-content {
+
+}
+
+.transaction {
+
+}
+
+.hao-btn {
+    color: #fff !important;
+    text-decoration: none !important;
+    background: #D76878;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    /* height: 50px; */
+}
+
+.love {
+    width: 25px;
+    vertical-align: middle;
+}
+@media only screen and (max-width: 550px),
+screen and (max-device-width: 550px) {
+    .hao-header {
+        padding: 40px 20px !important;
+    }
+    .footer-content {
+        padding: 40px 20px !important;
+    }
+    .content-body {
+        padding: 40px 20px !important;
+    }
+    .footer-bottom {
+        padding: 20px 20px !important;
+        width: 100% !important;
+        margin-bottom: 15px !important
+    }
+}
