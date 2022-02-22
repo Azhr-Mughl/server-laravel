@@ -12,7 +12,7 @@
             min-width: 100% !important;
             color: #263238 !important;
             background: #EAEAEA !important;
-            /* font-family: Ubuntu, Helvetica, Arial, sans-serif !important; */
+            font-family: Ubuntu, Helvetica, Arial, sans-serif !important;
         }
 
         .content {
@@ -159,6 +159,17 @@
             background: #ffffff !important;
             text-align: center !important;
         }
+
+        .quotation {
+            background: #F6F6F6;
+            border-radius: 25px;
+            max-width: 450px;
+            padding: 30px;
+            margin: auto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
         .greetings {
             font-weight: bold;
         }
@@ -219,13 +230,8 @@
                 <td>
                     <div class="hao-header simple-header">
                         <div class="hao-icon center m-auto">
-                            {{-- <img class="logo" src="{{asset('email_assets/hao-logo.png')}}"> --}}
                             <img class="logo" src="{{ $message->embed(public_path('email_assets/hao-logo.png')) }}" alt="Hao"/>
                         </div>
-
-                        {{-- <div class="mt-25 center m-auto">
-                            <img class="gift-box" src="{{asset('email_assets/gift-box.png')}}">
-                        </div> --}}
                     </div>
                 </td>
             </tr>
@@ -234,19 +240,22 @@
             <tr >
                 <td>
                     <div class="content-body">
-                        <div class="greetings">
-                            This is booking template,
+                        <div class="quotation">
+                            “The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience.” ―
+                            <span class="bold primary-color">Eleanor Roosevelt</span>
+                        </div>
+                        <div class="greetings mt-15">
+                            Azhar Mughal,
                         </div>
 
-                        <div class="message primary-color bold">
+                        <div class="message">
                             Welcome
                         </div>
 
                         <div class="welcome-content center m-auto">
-                            Thank you for registering with us and wish the Hao to be station for your happiness and exploring the live
+                            Here’s your journey start in exploring the world
                             <br>
-                            <br>
-                            Wishing you life full of beautiful experience with Hao.
+                            Thank you for booking in.
                         </div>
                     </div>
                 </td>
@@ -257,7 +266,7 @@
                 <td>
                     <div class="mb-10 center">
                         Sent With
-                        <img class="love" src="{{$message->embed(public_path('email_assets/heart.png'))}}">
+                        <img class="love" src="{{$message->embed(public_path('email_assets/heart.png'))}}" />
                          From Hao
                     </div>
                 </td>
@@ -269,13 +278,13 @@
                         <div class="footer-content">
                             <div class="social-links mt-10">
                                 <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
-                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-twitter.png'))}}">
+                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-twitter.png'))}}" />
                                 </a>
                                 <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
-                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-insta.png'))}}">
+                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-insta.png'))}}" />
                                 </a>
                                 <a href="https://www.azharmughal.com/" class="social-link ml-10 mb-10">
-                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-whatsapp.png'))}}">
+                                    <img class="social-img" src="{{$message->embed(public_path('email_assets/social-whatsapp.png'))}}" />
                                 </a>
                             </div>
 
@@ -289,10 +298,10 @@
 
                             <div class="download-buttons mt-15">
                                 <a href="https://www.azharmughal.com/" class="download-link mr-10 mb-10">
-                                    <img class="download-img" src="{{$message->embed(public_path('email_assets/download-apple.png'))}}">
+                                    <img class="download-img" src="{{$message->embed(public_path('email_assets/download-apple.png'))}}" />
                                 </a>
                                 <a href="https://www.azharmughal.com/" class="download-link mr-10 mb-10">
-                                    <img class="download-img" src="{{$message->embed(public_path('email_assets/download-android.png'))}}">
+                                    <img class="download-img" src="{{$message->embed(public_path('email_assets/download-android.png'))}}" />
                                 </a>
                             </div>
 

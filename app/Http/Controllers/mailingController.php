@@ -8,10 +8,10 @@ use App\Mail\HaoSaudiMail;
 
 class mailingController extends Controller
 {
-    // * http://localhost:8000/hao-email/welcome/mister_azhar@yahoo.com
-    // * http://localhost:8000/hao-email/discount/mister_azhar@yahoo.com
-    // * http://localhost:8000/hao-email/gift/mister_azhar@yahoo.com
-    // * http://localhost:8000/hao-email/booking/mister_azhar@yahoo.com
+    // * http://localhost:8000/hao-email/welcome/azhr.mughl@gmail.com
+    // * http://localhost:8000/hao-email/discount/azhr.mughl@gmail.com
+    // * http://localhost:8000/hao-email/gift/azhr.mughl@gmail.com
+    // * http://localhost:8000/hao-email/booking/azhr.mughl@gmail.com
 
     public function haoEmail($template, $email)
     {

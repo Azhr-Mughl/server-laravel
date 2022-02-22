@@ -207,6 +207,9 @@
             .hao-header {
                 padding: 40px 20px !important;
             }
+            .gift-header {
+                padding-bottom: 0px !important;
+            }
             .footer-content {
                 padding: 40px 20px !important;
             }
@@ -215,7 +218,6 @@
             }
             .footer-bottom {
                 padding: 20px 20px !important;
-                width: 100% !important;
                 margin-bottom: 15px !important
             }
         }
