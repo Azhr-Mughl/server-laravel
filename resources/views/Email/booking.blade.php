@@ -5,6 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>HaoSaudi</title>
     <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+        }
 
         .wrapper {
             margin: 0;
@@ -188,6 +192,63 @@
             padding: 30px;
         }
 
+        .booking-summary {
+            max-width: 550px;
+            margin: 20px auto;
+            text-align: left;
+            border-radius: 10px;
+            border: 1px solid #D2D2D2;
+        }
+
+        .summary-header {
+            background: #A1CCC4 !important;
+            padding: 15px 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .summary-content {
+
+        }
+        .summary-content > .booking-item:nth-of-type(2n)
+        {
+            background: #F6F6F6 !important;
+            background-color: #F6F6F6;
+        }
+
+        .fill {
+            background-color: #F6F6F6 !important;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+
+        .booking-item {
+            padding: 15px 20px;
+            overflow-y: hidden;
+        }
+
+        .booking-total {
+            padding: 20px 20px;
+            text-align: right;
+        }
+
+        .total-value {
+            margin-left: 50px;
+        }
+
+        .item-key {
+        }
+        .item-value {
+            float: right;
+            margin-left: 15px;
+            text-align: right;
+        }
+
+        .map-link {
+            background: #D76878;
+        }
+
         .hao-btn {
             color: #fff !important;
             text-decoration: none !important;
@@ -214,9 +275,14 @@
             .content-body {
                 padding: 40px 20px !important;
             }
+            .summary-header {
+                padding: 15px 10px !important;
+            }
+            .booking-item {
+                padding: 15px 10px !important;
+            }
             .footer-bottom {
                 padding: 20px 20px !important;
-                width: 100% !important;
                 margin-bottom: 15px !important
             }
         }
@@ -244,6 +310,7 @@
                             “The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience.” ―
                             <span class="bold primary-color">Eleanor Roosevelt</span>
                         </div>
+
                         <div class="greetings mt-15">
                             Azhar Mughal,
                         </div>
@@ -256,6 +323,53 @@
                             Here’s your journey start in exploring the world
                             <br>
                             Thank you for booking in.
+                        </div>
+
+                        <div class="booking-summary">
+                            <div class="summary-header">
+                                Booking Summary
+                            </div>
+                            <div class="summary-content">
+                                <div class="booking-item">
+                                    <span class="item-key">Booking No</span>
+                                    <span class="item-value primary-color bold">10717</span>
+                                </div>
+                                <div class="booking-item fill">
+                                    <span class="item-key">Date</span>
+                                    <span class="item-value bold">2022-01-13</span>
+                                </div>
+                                <div class="booking-item ">
+                                    <span class="item-key">Time</span>
+                                    <span class="item-value"><span class="bold">14:00  to 15:00</span> (Hao uses 24 H format Hao uses 24 H format Hao uses 24 H format)</span>
+                                </div>
+                                <div class="booking-item fill">
+                                    <span class="item-key">Person</span>
+                                    <span class="item-value bold">2</span>
+                                </div>
+                                <div class="booking-total">
+                                    <span class="item-key">Total</span>
+                                    <span class="total-value bold">320.00 SR</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="booking-content">
+                            Location description
+                            <br>
+                            You can enter from road A23 then enter the white building, you can find us on third floor
+
+                            <br> <br>
+                            Location on Google Map
+                            <br>
+                            <a href="https://www.azharmughal.com/" class="bold primary-color underline mb-10">Link</a>
+
+                            <br><br>
+
+                            <a href="https://www.azharmughal.com/" class="bold primary-color underline mb-10">Click here</a>
+                            to visit your profile and check you experience booking details
+
+                            <br><br><br>
+                            Hope it will be experience full of exploring new things and pleasure
                         </div>
                     </div>
                 </td>

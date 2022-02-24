@@ -5,6 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>HaoSaudi</title>
     <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+        }
 
         .wrapper {
             margin: 0;
@@ -12,7 +16,7 @@
             min-width: 100% !important;
             color: #263238 !important;
             background: #EAEAEA !important;
-            /* font-family: Ubuntu, Helvetica, Arial, sans-serif !important; */
+            font-family: Ubuntu, Helvetica, Arial, sans-serif !important;
         }
 
         .content {
